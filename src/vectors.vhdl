@@ -39,26 +39,26 @@ package vectors is
   -------------------------------------------------------------------
   -- resolution function
   -------------------------------------------------------------------
-  function resolved (s : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR;
+  -- function resolved (s : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR;
 
 
   -------------------------------------------------------------------
   -- unconstrained array of resolved std_ulogic_vector for use in declaring
   -- signal arrays of resolved elements
   -------------------------------------------------------------------
-  subtype STD_LOGIC_VECTOR_VECTOR is (resolved) STD_ULOGIC_VECTOR_VECTOR;
+  -- subtype STD_LOGIC_VECTOR_VECTOR is (resolved) STD_ULOGIC_VECTOR_VECTOR;
 
   -------------------------------------------------------------------
   -- doubly vectorized overloaded logical operators
   -------------------------------------------------------------------
 
-  function "and"  (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
-  function "nand" (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
-  function "or"   (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
-  function "nor"  (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
-  function "xor"  (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
-  function "xnor" (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
-  function "not"  (l    : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "and"  (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "nand" (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "or"   (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "nor"  (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "xor"  (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "xnor" (l, r : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
+  -- function "not"  (l    : STD_ULOGIC_VECTOR_VECTOR) return STD_ULOGIC_VECTOR_VECTOR;
 
   -- ...
 
